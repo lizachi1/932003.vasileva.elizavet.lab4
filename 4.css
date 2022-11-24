@@ -1,0 +1,173 @@
+body {
+    height: 100%;
+    background-color: #edeef0;
+    font-family: 'Lexend', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    background-color: #507299;
+    padding: 5px 0;
+    padding-left: 15%;
+    margin-bottom: 15px;
+    position: sticky;
+    top: 0;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #507299;
+}
+
+/* Main ---------*/
+
+.main {
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    max-width: 900px;
+}
+
+
+/* Nav ---------*/
+
+.main__nav {
+    color: #507299;
+    width: 25%;
+    padding: 0 30px;
+}
+
+.main__nav__link {
+    margin: 0;
+    padding: 8px 10px;
+}
+
+.main__nav__link:hover {
+    background-color: #e1e5eb;
+    border-radius: 3px;
+}
+
+/* content__text ---------*/
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__content__container {
+    padding: 15px 15px;
+    background-color: white;
+    border: 1px solid #d0d0d0;
+    border-radius: 10px;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.main__content__text {
+    padding-bottom: 10px;
+    border-bottom: 3px solid #d0d0d0;
+}
+
+.main__content__text::selection {
+    color: green;
+    background-color: #d0d0d0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* content__footer ---------*/
+
+.main__content__footer {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: #507299;
+}
+
+/* Info ---------*/
+
+.main__info {
+    margin-left: 125px;
+    position: sticky;
+    top: 53px;
+    z-index: 10;
+    align-self: flex-start;
+
+}
+
+.main__info__container {
+    padding: 20px 0;
+    width: 145px;
+    background-color: white;
+    border: 1px solid #d0d0d0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.main__info__text {
+    padding: 0 10px;
+}
+
+p {
+    margin: 0;
+    background-color: #edeef0;
+    margin-bottom: 10px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+h4 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+
+/* Info ---------*/
+
+footer {
+    font-size: 12px;
+    background-color: white;
+    color: #939393;
+    text-align: center;
+    padding: 3px 0;
+}
+
+
+@media screen and (max-width: 908px) {
+    .main {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main__nav {
+        width: 415px;
+        padding-bottom: 30px;
+    }
+    
+    .main__nav__link {
+        display: inline-block;
+    }
+    
+    .main__info {
+        display: none;
+    }
+}
